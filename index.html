@@ -11,7 +11,22 @@
     <body>
         <div class="container">
             <div id="profile">
-                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 id="userName" class="panel-title"></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div id="avatar" class="col-md-3"></div>
+                            <div class="col-md-9">
+                                <ul class="list-group">
+                                    <li>Website: ${user.blog}</li>
+                                    <li>Email: ${user.email}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>

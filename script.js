@@ -8,7 +8,10 @@ function getProfile(){
 
         if(xhttp.readyState == 4 && xhttp.status == 200){
             var user = JSON.parse(xhttp.responseText);
-            document.getElementById('profile').innerHTML = user.name;
+            var userName = document.getElementById('userName');
+            userName.innerHTML = user.name;
+            var avatar = document.getElementById('avatar');
+            avatar.innerHTML = `<img src="${user.avatar_url}" alt=""></img>`;
         }
     }
 
