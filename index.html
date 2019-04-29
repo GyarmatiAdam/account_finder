@@ -10,6 +10,13 @@
     </head>
     <body>
         <div class="container">
+            <form id="user_input">
+                <div class="form-group">
+                    <label>Github login:</label>
+                    <input type="text" id="username" class="form-control"> 
+                    <button type="submit" class="btn btn-secondary">OK</button>
+                </div>
+            </form>
             <div id="profile">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -17,14 +24,16 @@
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div id="avatar" class="col-md-3"></div>
+                            <div>
+                                <div id="avatar" class="col-md-3"></div>
+                                <div id="bio"></div>
+                            </div>
                             <div class="col-md-9">
-                                <span id="public_reps" class="label label-info"></span><br>
-                                <span id="location" class="label label-danger"></span>
-                                <ul class="list-group">
-                                    <li id="userBlog"></li>
-                                    <li id="userEmail"></li>
-                                </ul>
+                                <div id="public_reps"></div><br>
+                                <div id="location"></div><br>
+                                <div id="userBlog"></div><br>
+                                <div id="userEmail"></div><br>
+                                <div id="profil"></div>
                             </div>
                         </div>
                     </div>
