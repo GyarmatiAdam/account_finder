@@ -5,16 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Counter</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
             <form id="user_input">
                 <div class="form-group">
                     <label>Github login:</label>
-                    <input type="text" id="username" class="form-control"> 
-                    <button type="submit" class="btn btn-secondary">OK</button>
+                    <p>(Please write a Github login-name below, to find more details.)</p>
+                    <div class="row">
+                        <input type="text" id="username" class="form-control"> 
+                        <button type="submit" class="btn btn-secondary">OK</button>
+                    </div>
                 </div>
             </form>
             <div id="profile">
@@ -23,11 +26,11 @@
                         <h3 id="userName" class="panel-title"></h3>
                     </div>
                     <div class="panel-body">
+                        <div class="row">                          
+                            <div id="avatar" class="col-md-3"></div>
+                            <div id="bio"></div>
+                        </div> 
                         <div class="row">
-                            <div>
-                                <div id="avatar" class="col-md-3"></div>
-                                <div id="bio"></div>
-                            </div>
                             <div class="col-md-9">
                                 <div id="public_reps"></div><br>
                                 <div id="location"></div><br>

@@ -1,3 +1,29 @@
 img{
     width: 50%;
 }
+body{
+    background-color: aqua;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+input{
+    border: blue;
+    max-width: 400px;
+    margin-left: 30px;
+}
+div{
+    font-size: 18px;
+    font-weight: bold;
+}
+label{
+    font-size: 30px;
+}
+#avatar{
+    float: left;
+    max-width: 50%;
+}
+#bio{
+    float: right;
+    max-width: 50%;
+    margin: 20px 10px 20px 10px;
+}
